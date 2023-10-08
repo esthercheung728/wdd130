@@ -1,7 +1,7 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Mooli&family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mooli&display=swap');
 
 :root {
     /* change the values below to your colors from your palette */
@@ -11,7 +11,7 @@ Fonts are separated by a & */
     --accent2-color: #17C3B2;
 
     /* change the values below to your chosen font(s) */
-    --heading-font: "Mooli";
+    --heading-font: "Mooli", sans-serif;
     --paragraph-font: "Lato", Helvetica, sans-serif;
 
     /* these colors below should be chosen from among your palette colors above */
@@ -93,7 +93,7 @@ p {
 }
 
 .colors th {
-    background-color: #999;
+    background-color: #FEF9EF;
 }
 
 .colors td {
@@ -169,19 +169,19 @@ nav a:hover {
 
 .sm-home {
     grid-area: home;
-    background-color: #ccc;
+    background-color: #FEF9EF;
     line-height: 3em;
 }
 
 .sm-page2 {
     grid-area: page2;
-    background-color: #ccc;
+    background-color: #FEF9EF;
     line-height: 3em;
 }
 
 .sm-page3 {
     grid-area: page3;
-    background-color: #ccc;
+    background-color: #FEF9EF;
     line-height: 3em;
 }
 
