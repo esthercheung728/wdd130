@@ -1,0 +1,47 @@
+@import url(link rel="styles" href="styles/style.css" /) body {
+    text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap');
+
+
+
+.lower_side {
+
+    display: inline;
+
+    margin: 0 auto;
+
+}
+
+.circles {
+
+    width: 15%;
+
+    margin: 1.75% 7.5%;
+
+    border-radius: 50%;
+
+    border: 8px solid rgb(44, 44, 44);
+
+    background-color: gray;
+
+}
+
+.main-img {
+
+    display: block;
+
+    width: 100%;
+
+}
+
+body {
+
+    background-color: gray;
+
+    margin: 0;
+
+    padding: 0;
+
+}
