@@ -398,26 +398,29 @@ footer a:hover {
 }
 
 .card-img1 {
-    padding: 100px 0px 0px 0px;
     float: left;
     width: 500px;
     height: 300px;
+    margin: 50px 50px;
+
 }
 
 .card-img2 {
-    padding: 100px 0px 0px 0px;
+    margin: 50px 50px;
     float: right;
     width: 200px;
     height: 300px;
 }
 
 .card-img3 {
+    margin: 50px 50px;
     float: left;
     width: 500px;
     height: 300px;
 }
 
 .card-img4 {
+    margin: 50px 50px;
     float: left;
     width: 500px;
     height: 300px;
