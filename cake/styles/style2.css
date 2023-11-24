@@ -95,14 +95,16 @@ header a:hover {
 }
 
 .news h2 {
-    font-size: 60px;
+    font-size: 100px;
     margin-top: 60px;
+    font-family: 'Corinthia', 'Bradley Hand', sans-serif;
 }
 
 .news p {
     color: #1D3557;
-    font-size: 18px;
+    font-size: 40px;
     margin: 25px 0;
+    font-family: 'Allura', 'Bradley Hand', sans-serif;
 }
 
 .contact h2 {
@@ -150,6 +152,7 @@ header a:hover {
     line-height: 1.5em;
 }
 
+
 .card-img1,
 .card-img2,
 .card-img3,
@@ -159,14 +162,15 @@ header a:hover {
     float: left;
     width: 500px;
     height: 300px;
+
 }
 
 .heading1 {
     color: white;
     font-family: 'Merriweather', sans-serif;
     padding: 20px;
+    font-size: 40px;
 }
-
 
 .msg1,
 .msg2,
@@ -178,9 +182,8 @@ header a:hover {
     /* height: 50px; */
     margin: 0;
     color: #FCA311;
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
-
 
 .shop {
     display: flex;
@@ -188,6 +191,7 @@ header a:hover {
 
 .shop img {
     width: 50%;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .info {
@@ -202,11 +206,14 @@ header a:hover {
 .info h2 {
     font-size: 40px;
     margin-bottom: 30px;
+    font-family: 'Handlee', 'Bradley Hand', sans-serif;
 }
 
 .info p {
     text-align: center;
     line-height: 2em;
+    font-size: 18px;
+    padding: 50px;
 }
 
 .product {
@@ -256,6 +263,7 @@ header a:hover {
 
 .newsletter p {
     margin-bottom: 20px;
+    font-size: 30px;
 }
 
 .newsletter input,
@@ -297,7 +305,7 @@ footer {
     align-items: center;
     font-size: 14px;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 0px;
 }
 
 footer p {
@@ -444,7 +452,7 @@ button {
 
 
 
-/* 響應式設計語法 */
+
 @media screen and (max-width: 768px) {
     header ul {
         display: none;
