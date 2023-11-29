@@ -108,20 +108,27 @@ header a:hover {
 }
 
 .contact h2 {
-    font-size: 60px;
-    margin-top: 60px;
+    font-size: 150px;
+    margin-top: 150px;
+    font-family: 'Corinthia', 'Bradley Hand', sans-serif;
+}
+
+.contact h4 {
+    color: #1D3557;
+    font-size: 30px;
+    margin: 25px 0;
 }
 
 .contact p {
     color: #1D3557;
-    font-size: 18px;
+    font-size: 25px;
     margin: 25px 0;
 }
 
 .contact {
     background-color: antiquewhite;
     color: #1D3557;
-    height: 120vh;
+    height: 1200px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -187,18 +194,20 @@ header a:hover {
 }
 
 .shop {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto;
 }
 
 .shop img {
-    width: 50%;
+    grid-column: 3/4;
+    width: 100%;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
 .info {
     width: auto;
     background-color: white;
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -207,12 +216,14 @@ header a:hover {
 }
 
 .info h2 {
+    grid-column: 0/2;
+    text-align: center;
     font-size: 40px;
-    margin-bottom: 20px;
     font-family: 'Handlee', 'Bradley Hand', sans-serif;
 }
 
 .info p {
+    grid-column: 0/2;
     text-align: center;
     line-height: 2em;
     font-size: 25px;
@@ -342,43 +353,27 @@ footer a:hover {
     display: none;
 }
 
-
-#feedback {
-    background-color: #A89568;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: .5em;
-    /* make this element invisible until we are ready for it */
-    display: none;
-}
-
-.moveDown {
-    margin-top: 3em;
-}
-
 form {
     /* Center the form on the page */
     margin: 0 auto;
-    width: 400px;
-    margin-top: 100px;
+    width: 500px;
     /* Form outline */
     padding: 1em;
-    border: 1px solid #1D3557;
+    border: 5px solid #6f7364;
     border-radius: 1em;
+    color: #EBEBEB;
+    /* test */
+    background-color: #6f7364;
 }
 
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    color: #1D3557;
 }
 
 form li + li {
     margin-top: 1em;
-    color: #1D3557;
 }
 
 label {
@@ -392,20 +387,23 @@ input,
 textarea {
     /* To make sure that all text fields have the same font settings
        By default, textareas have a monospace font */
-    font: 1em sans-serif;
+    /*font: 1em sans-serif;*/
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1em;
+    color: #01377A;
 
     /* Uniform text field size */
-    width: 300px;
+    width: 400px;
     box-sizing: border-box;
 
     /* Match form field borders */
-    border: 1px solid #999;
+    border: 1px solid #EBEBEB;
 }
 
 input:focus,
 textarea:focus {
     /* Additional highlight for focused elements */
-    border-color: #ccc;
+    border-color: #794CB8;
 }
 
 textarea {
@@ -418,14 +416,30 @@ textarea {
 
 .button {
     /* Align buttons with the text fields */
-    padding-left: 90px;
-    /* same size as the label elements */
+    /*padding-left: 90px;  same size as the label elements */
+    text-align: center;
 }
 
-button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-    margin-left: 0.5em;
+
+/* button {
+    This extra margin represent roughly the same space as the space between the labels and their text fields margin-left: 0.5em;
+} */
+
+
+#feedback {
+    background-color: antiquewhite;
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    padding: 4em;
+    /* make this element invisible until we are ready for it
+    display: none;*/
+    align-self: center;
+    justify-self: center;
+    /*margin-top: 200px; test */
+    /*margin-bottom: -100px; test */
 }
 
 #contact-msg {
@@ -441,8 +455,6 @@ button {
 #contact-msg h1 {
     text-align: center;
 }
-
-
 
 
 
@@ -490,6 +502,7 @@ button {
     }
 
     .shop img {
+        grid-column: 3/4;
         width: 100%;
     }
 
