@@ -497,7 +497,7 @@ textarea {
     grid-area: message2;
 }
 
-.message2 h1 {
+.message2 h4 {
     font-size: 80px;
     color: #1D3557;
     text-align: center;
@@ -515,7 +515,7 @@ textarea {
     text-align: center;
 }
 
-.header1 h8 {
+.header1 h5 {
     font-size: 100px;
     color: #1D3557;
     text-align: center;
