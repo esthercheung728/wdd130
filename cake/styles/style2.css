@@ -246,15 +246,17 @@ header a:hover {
 
 .product img {
     width: 100%;
+    height: 450px;
+    object-fit: cover;
     border-radius: 10px;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
-.product img:hover {
+/* .product img:hover {
     opacity: .6;
     transform: scale(1.1);
-}
+} */
 
 
 .product h3 {
@@ -314,7 +316,7 @@ input:focus {
 footer {
     background-color: #1D3557;
     color: #B7B7B7;
-    height: 60px;
+    height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -462,13 +464,63 @@ textarea {
     grid-column: 1/2;
 }
 
-/* Slideshow container */
-.slideshow-container {
-    max-width: 500px;
-    position: relative;
-    margin: auto;
+/* Gallery Page */
+.grid {
+    display: grid;
     background-color: antiquewhite;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "slideshow-container message2";
+    padding: 20px;
+}
+
+/* Message2 container */
+.message2 {
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+
+}
+
+/* Specify the grid areas for each element */
+.slideshow-container {
+    grid-area: slideshow-container;
+}
+
+.message2 {
+    grid-area: message2;
+}
+
+.message2 h1 {
+    font-size: 80px;
+    color: #1D3557;
+    text-align: center;
+    font-family: 'Corinthia', 'Bradley Hand', sans-serif;
+}
+
+.message2 p {
+    font-size: 30px;
+    color: #1D3557;
+    font-family: 'Handlee', 'Bradley Hand', sans-serif;
+}
+
+.header1 {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.header1 h8 {
+    font-size: 100px;
+    color: #1D3557;
+    text-align: center;
+    background-color: antiquewhite;
+    font-family: 'Corinthia', 'Bradley Hand', sans-serif;
 }
 
 /* Hide the images by default */
