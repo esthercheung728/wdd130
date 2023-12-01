@@ -216,14 +216,14 @@ header a:hover {
 }
 
 .info h2 {
-    grid-column: 0/2;
+    grid-column: 1/2;
     text-align: center;
     font-size: 40px;
     font-family: 'Handlee', 'Bradley Hand', sans-serif;
 }
 
 .info p {
-    grid-column: 0/2;
+    grid-column: 1/2;
     text-align: center;
     line-height: 2em;
     font-size: 25px;
@@ -459,6 +459,7 @@ textarea {
 
 * {
     box-sizing: border-box;
+    grid-column: 1/2;
 }
 
 /* Slideshow container */
@@ -467,11 +468,12 @@ textarea {
     position: relative;
     margin: auto;
     background-color: antiquewhite;
+    grid-template-columns: 1fr 1fr;
 }
 
 /* Hide the images by default */
 .mySlides {
-    display: none;
+    display: grid;
 }
 
 /* Next & previous buttons */
