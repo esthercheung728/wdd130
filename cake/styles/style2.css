@@ -381,7 +381,7 @@ form li + li {
 label {
     /* Uniform size & alignment */
     display: inline-block;
-    width: 90px;
+    width: 60px;
     text-align: right;
 }
 
@@ -395,7 +395,7 @@ textarea {
     color: #01377A;
 
     /* Uniform text field size */
-    width: 400px;
+    width: 380px;
     box-sizing: border-box;
 
     /* Match form field borders */
@@ -430,11 +430,11 @@ textarea {
 
 #feedback {
     background-color: antiquewhite;
-    /*position: absolute;
+    /* position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;*/
+    bottom: 0; */
     padding: 4em;
     /* make this element invisible until we are ready for it
     display: none;*/
