@@ -107,37 +107,6 @@ header a:hover {
     font-family: 'Allura', 'Bradley Hand', sans-serif;
 }
 
-.contact h2 {
-    font-size: 150px;
-    margin-top: 150px;
-    font-family: 'Corinthia', 'Bradley Hand', sans-serif;
-}
-
-.contact h4 {
-    color: #1D3557;
-    font-size: 30px;
-    margin: 25px 0;
-}
-
-.contact p {
-    color: #1D3557;
-    font-size: 25px;
-    margin: 25px 0;
-}
-
-.contact {
-    background-color: antiquewhite;
-    color: #1D3557;
-    height: 1200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 
 
 .news a {
@@ -444,6 +413,11 @@ textarea {
     /*margin-bottom: -100px; test */
 }
 
+.feedback {
+    background: antiquewhite;
+    padding: 40px;
+}
+
 #contact-msg {
     grid-column: 2/3;
     grid-row: 1/3;
@@ -456,6 +430,39 @@ textarea {
 
 #contact-msg h1 {
     text-align: center;
+}
+
+
+.contact h2 {
+    font-size: 100px;
+    font-family: 'Corinthia', 'Bradley Hand', sans-serif;
+    text-align: center;
+}
+
+.contact h4 {
+    color: #1D3557;
+    font-size: 30px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.contact p {
+    color: #1D3557;
+    font-size: 25px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.contact {
+    background-color: antiquewhite;
+    color: #1D3557;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -473,6 +480,39 @@ textarea {
         "slideshow-container message2";
     padding: 20px;
 }
+
+/* Contact us Page */
+.grid2 {
+    display: grid;
+    background-color: antiquewhite;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "contact contactus1";
+    column-gap: 50px;
+    padding: 60px;
+    /* justify-content: space-around;
+    align-items: center; */
+}
+
+/* Message2 container */
+.contactus1 {
+    background-color: antiquewhite;
+    padding: 10px;
+    grid-column: 2/3;
+}
+
+/* Slideshow container */
+.contact {
+    /* position: relative;
+    margin: auto;
+    align-self: left; */
+    padding: 60px;
+    grid-column: 1/2;
+    align-items: center;
+
+}
+
+
 
 /* Message2 container */
 .message2 {
