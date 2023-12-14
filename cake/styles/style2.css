@@ -164,11 +164,13 @@ header a:hover {
 
 .shop {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    align-items: center;
 }
 
 .shop img {
-    grid-column: 3/4;
+    grid-column: 2/4;
     width: 100%;
     box-shadow: 5px 5px 10px #6f7364;
 }
@@ -176,22 +178,27 @@ header a:hover {
 .info {
     width: auto;
     background-color: white;
-    display: grid;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* flex-direction: column; */
+    /* align-items: center;
+    justify-content: center; */
     height: auto;
-    margin-top: 0;
-}
-
-.info h2 {
+    margin-top: 20px;
     grid-column: 1/2;
     text-align: center;
     font-size: 40px;
     font-family: 'Handlee', 'Bradley Hand', sans-serif;
+    /* width: 100%;
+    margin: 0; */
 }
 
-.info p {
+.card-img2 {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.info2 {
     grid-column: 1/2;
     text-align: center;
     line-height: 2em;
@@ -698,6 +705,8 @@ textarea {
 
     .shop {
         flex-direction: column;
+        box-sizing: border-box;
+        grid-column: 1/2;
     }
 
     .shop img {
@@ -721,5 +730,33 @@ textarea {
 
     .product div {
         margin-bottom: 30px;
+    }
+}
+
+/* CSS code for tablet mode */
+
+@media (max-width: 768px) {
+    .product {
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
+    .product div {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .product img {
+        height: auto;
+    }
+
+    .product h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .product p {
+        font-size: 12px;
     }
 }
