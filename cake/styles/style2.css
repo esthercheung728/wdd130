@@ -164,15 +164,18 @@ header a:hover {
 
 .shop {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto;
     gap: 20px;
     align-items: center;
 }
 
 .shop img {
-    grid-column: 2/4;
+    grid-column: 2/3;
     width: 100%;
     box-shadow: 5px 5px 10px #6f7364;
+    /* max-height: auto; */
+    object-fit: cover;
+    align-items: center;
 }
 
 .info {
@@ -182,6 +185,9 @@ header a:hover {
     /* align-items: center;
     justify-content: center; */
     height: auto;
+}
+
+.shop h2 {
     margin-top: 20px;
     grid-column: 1/2;
     text-align: center;
@@ -196,9 +202,10 @@ header a:hover {
     max-height: 100%;
     object-fit: cover;
     box-shadow: 5px 5px 10px #6f7364;
+    grid-column: 2/3;
 }
 
-.info2 {
+.shop p {
     grid-column: 1/2;
     text-align: center;
     line-height: 2em;
